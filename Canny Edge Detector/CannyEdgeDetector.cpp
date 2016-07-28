@@ -15,7 +15,7 @@ int main( int argc, char** argv )
      cout <<" Usage: display_image ImageToLoadAndDisplay" << endl;
      return -1;
     }
-	//Mt kopyalama
+	
 	//filitrelerin double degeri almasi
     Mat image;
 	Mat image2;
@@ -24,29 +24,15 @@ int main( int argc, char** argv )
     image = imread(argv[1], IMREAD_COLOR); // Read the file
 	 imshow( "original", image ); // Show our image inside it.
 
-	//image2= imread(argv[1], IMREAD_COLOR);
-	// 8 bit mat image olustur
-	Mat im(image.rows,image.cols,CV_8UC1);
-//	grayImage=image;
 	
-	//image.convertTo(grayImage, CV_32F);
-	//////////////////////////////////////////
+	// generate 8 bit mat image
+	Mat im(image.rows,image.cols,CV_8UC1);
 	// Convert image to gray scatle
 	convertPictureToGrayScale(image,im);
-	
-
-	
-	//////////////////////////////////////////
-	//////////////////////////////////////////
-
-	//////////////////////////////////
-	///////////BLURRING
+	//Blur the image
 	Mat blurred(im.rows,im.cols,CV_8UC1);
 	blurTheImage(im,blurred);
 	
-	/////////////////////////////////////
-
-//	cout<<(int)blurred.at<cv::Vec3b>(100,100)[1];
 	/////////////////////////////////////
 	////////////GRADIENT/////////////////
 	///////////////X////////////////////
@@ -56,10 +42,10 @@ int main( int argc, char** argv )
 	double derivativeY[3][3]={{-0.125,-0.25,-0.125},{0,0,0},{0.125,0.25,0.125}};
 
 	gradient(im,gradientX,derivativeX);
-	imshow( "gradientX", gradientX ); // Show our image inside it.
+	imshow( "gradientX", gradientX ); 
 
 	gradient(im,gradientY,derivativeY);
-		imshow( "gradientY", gradientY ); // Show our image inside it.
+		imshow( "gradientY", gradientY );
 
 	/////////////////////////////////////////
 	Mat magnitude(image.rows,image.cols,CV_8UC1);
@@ -88,10 +74,7 @@ void convertPictureToGrayScale(Mat& image,Mat& im)
 	{
 		 for (int j = 0; j < image.cols; j++)
 		 {
-			// for (int k = 0; k < 3; k++)
-	//		{
 				im.at<uchar>(i,j)=image.at<cv::Vec3b>(i,j)[0]*0.11+image.at<cv::Vec3b>(i,j)[1]*0.58+image.at<cv::Vec3b>(i,j)[2]*0.289;	
-				//		}
 		 }
 	}
 	    imshow( "gray", im ); // Show our image inside it.
@@ -122,8 +105,6 @@ void gradient(Mat& im,Mat& gradient,double derivative[3][3])
 {
 		
 	double total=0;
-	//double derivativeX[3][3]={{-0.125,-0.25,-0.125},{0,0,0},{0.125,0.25,-0.125}};// not sobel
-
 	for(int i=1;i<im.rows-1;i++)
 	{
 		for(int j=1;j<im.cols-1;j++)
