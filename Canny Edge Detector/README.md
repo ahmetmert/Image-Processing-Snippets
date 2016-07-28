@@ -1,3 +1,3 @@
 test readme
 
-![alt tag](https://raw.githubusercontent.com/ccgn/rust-image/master/examples/fractal.png "A Julia Fractal, c: -0.4 + 0.6i")
+![alt tag](https://github.com/ahmetmert/Image-Processing-Snippets/blob/master/Canny%20Edge%20Detector/2015-03-23%2022_06_54-original.png "test image")
