@@ -19,29 +19,29 @@ Houses
 
 Otsu's performed Lena
 
-![alt tag](Outputs/OtsusLena.jpg "Lena Original Image")
+![alt tag](Outputs/OtsusLena.png "Lena Original Image")
 
 Otsu's performed Robot
 
-![alt tag](Outputs/OtsusRobot.jpg "Robot Original Image")
+![alt tag](Outputs/OtsusRobot.png "Robot Original Image")
 
 Otsu's performed Houses
 
-![alt tag](Outputs/OtsusHouses.jpg "Houses Original Image")
+![alt tag](Outputs/OtsusHouses.png "Houses Original Image")
 
-## KMeans Clustering
+## KMean Clustering
 
-KMeans performed Lena
+KMean performed Lena
 
-![alt tag](Outputs/KMeansLena.jpg "Lena Original Image")
+![alt tag](Outputs/KMeanLena.png "Lena Original Image")
 
-KMeans performed Robot
+KMean performed Robot
 
-![alt tag](Outputs/KMeansRobot.jpg "Robot Original Image")
+![alt tag](Outputs/KMeanRobot.png "Robot Original Image")
 
-KMeans performed Houses
+KMean performed Houses
 
-![alt tag](Outputs/KMeansHouses.jpg "Houses Original Image")
+![alt tag](Outputs/KMeanHouses.png "Houses Original Image")
 
 
 
