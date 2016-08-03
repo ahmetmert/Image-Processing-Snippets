@@ -27,7 +27,7 @@ Otsu's performed Robot
 
 Otsu's performed Houses
 
-![alt tag](Outputs/OtsusHouses.png "Houses Original Image")
+![alt tag](Outputs/OtsusHouse.png "Houses Original Image")
 
 ## KMean Clustering
 
