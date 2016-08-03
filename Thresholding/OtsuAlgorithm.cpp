@@ -63,7 +63,6 @@ int performOtsu(Mat& image,int channelNumber)
 			findMeans(m0,m1,w0,w1,prob,k);
 
 			varience =w0*w1*(m0-m1)*(m0-m1);// needs to be maximum value
-			cout<<"Treshold :"<<k<<" Var. dif :"<<varience <<endl;
 			if(varience>varienceMax)
 			{
 				varienceMax=varience;

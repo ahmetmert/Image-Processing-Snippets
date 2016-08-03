@@ -1,4 +1,4 @@
-/*#include <opencv2/core/core.hpp>
+#include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
 
@@ -83,10 +83,7 @@ void convertPictureToGrayScale(Mat& image,Mat& im)
 	{
 		 for (int j = 0; j < image.cols; j++)
 		 {
-			// for (int k = 0; k < 3; k++)
-	//		{
 				im.at<uchar>(i,j)=image.at<cv::Vec3b>(i,j)[0]*0.11+image.at<cv::Vec3b>(i,j)[1]*0.58+image.at<cv::Vec3b>(i,j)[2]*0.289;	
-				//		}
 		 }
 	}
 }
@@ -107,4 +104,4 @@ void tresholdImage(Mat& im, int t)
 			 }
 		 }
 	}
-}*/
+}
