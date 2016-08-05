@@ -1,3 +1,5 @@
+##Color Detector
+
 This primitive code snippet classifies colors in a Picture. Pictures to be tested are taken by me and it only contains the single color. This make classifiying easy for the program
 
 Project is implemented in cpp and opencv library is used for matrix calculations. No function is used but pow() for exponential calculation.
