@@ -32,10 +32,10 @@ int main( int argc, char** argv )
     Mat image;
     image = imread(argv[1], CV_LOAD_IMAGE_COLOR);	// Read the file
 	Mat gray(image.rows,image.cols,CV_8UC1);
-	long long first=0;//=184; //image.at<cv::Vec3b>(0,0)[0];
-	long long second=0;// =181;//image.at<cv::Vec3b>(0,0)[1];
-	long long third=0;// =176;//image.at<cv::Vec3b>(0,0)[2];
-	//int diff = pow(third-238,2)+pow(second-130,2)+pow(first-238,2);
+	long long first=0;
+	long long second=0;
+	long long third=0;
+	
 	//diff= sqrt(diff);
 	for(int i=0;i<image.rows;i++)
 	{
