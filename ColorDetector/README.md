@@ -1,7 +1,7 @@
 The homework we are asked to do is classifiying colors in a Picture. This Picture is taken by me and it only contains the same color. This make classifiying easy for the program
 Project is implemented in cpp and opencv library is used for matrix calculations. No function is used but pow() for exponential calculation.
 Step 1) The method that I used classifies colors wih their RGB values. Each Red gree and blue value of every pixels are sum up and they are divided the total number of pixel. Doing that, I find average pixel value o all pixel values in a picture. Code snipped below is showing the method.
-![alt tag]({{site.baseurl}}/http://radio.feld.cvut.cz/matlab/toolbox/images/colorcube.jpg)
+![alt text](http://radio.feld.cvut.cz/matlab/toolbox/images/colorcube.jpg "3D Representation of RGB color space")
 Step 2) RGB is considered as 3 dimensional space showing below. Each color is represented as a point. Here are points represents colors;
 BGR
 RED =(0,0,255);
