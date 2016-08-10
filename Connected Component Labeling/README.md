@@ -4,6 +4,9 @@ This primitive code snippet detects connected components in a Picture.
 
 Project is implemented in cpp and opencv library is used for matrix calculations. 
 
+Input image: ![alt tag](Inputs/guide_8bits.bmp "Original Image")
+
+
 Step 1) Picture is converted to gray image with the formula of "Gray pixel Value = Red * 0.289 + Green * 0.58 + Blue * 0.11"
 
 ```C++
