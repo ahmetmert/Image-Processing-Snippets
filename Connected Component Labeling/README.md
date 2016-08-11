@@ -51,3 +51,7 @@ void tresholdImage(Mat& im, int t)
 Step 4) Find region method is called. Following youtube video explains the logic behind the algorithm.
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/rVtFyefbJio/0.jpg)](http://www.youtube.com/watch?v=rVtFyefbJio)
+
+
+Output image:
+ ![alt tag](Output Images/guide_8bits.bmp "Original Image")
