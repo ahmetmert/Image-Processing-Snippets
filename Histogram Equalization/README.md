@@ -1,4 +1,4 @@
-##Image Enhancement
+##Histogram Equalization
 
 calculate histogram array
 ```C++
